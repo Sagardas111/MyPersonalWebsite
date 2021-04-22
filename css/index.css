@@ -30,6 +30,14 @@ p{
 				font-weight: 400;
 				font-family: 'Montserrat', sans-serif;
 }
+a{
+				text-decoration: none;
+				background: #191970;
+				color: ghostwhite;
+				margin-top: 200px;
+				padding: 5px 10px;
+				border-radius: 5px;
+}
 /* profile */
 header{
 				position: relative;
@@ -70,7 +78,7 @@ header > .content-wrap{
 .education p{
 				padding-bottom: 5px;
 }
-.education .content-wrap section:nth-child(4){
+.education .content-wrap section:last-child{
 				border: none;
 }
 /* tech-skills */
@@ -104,7 +112,7 @@ header > .content-wrap{
 				margin-top: 40px;
 }
 .certificates p{
-				padding-bottom: 0px;
+				margin-bottom: 20px;
 }
 .certificate-item{
 				padding: 20px 0;
@@ -125,6 +133,7 @@ footer ul{
 footer a{
 				text-decoration: none;
 				color: #ffdf00;
+				background: none;
 }
 footer h1{
 				font-weight: 800;
@@ -138,4 +147,22 @@ footer span{
 				margin-left: 43%;
 				padding: 10px 10px;
 				text-align: center;
+}
+/* ---for medium screen device */
+@media screen and (min-width: 500px){
+				.medium-screen-float-height-control{
+								min-height: 200px;
+				}
+				.item-1 img, .item-3 img{
+								float: left;
+								overflow: hidden;
+								margin: 0 15px 15px 0;
+				}
+				.item-2 img, .item-4 img{
+								float: right;
+								overflow: hidden;
+								margin: 0 15px 15px 0;
+				}
+				
+				
 }

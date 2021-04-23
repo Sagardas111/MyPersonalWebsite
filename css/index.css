@@ -3,9 +3,37 @@
 				padding: 0;
 				box-sizing: border-box;
 }
+@keyframes blink{
+				0%{
+								background-color: ghostwhite;
+				}
+				25%{
+								background-color: aquamarine;
+				}
+				75%{
+								background-color: limegreen;
+				}
+				100%{
+								background-color: ghostwhite;
+				}
+}
+@-webkit-keyframes blink{
+				0%{
+								background-color: ghostwhite;
+				}
+				25%{
+								background-color: aquamarine;
+				}
+				75%{
+								background-color: limegreen;
+				}
+				100%{
+								background-color: ghostwhite;
+				}
+}
 body{
-				background-color: ghostwhite;
 				font-family: 'roboto' , sarif;
+				animation: blink 5s infinite;
 }
 .content-wrap{
 			 width: 80%;
@@ -34,10 +62,10 @@ a{
 				text-decoration: none;
 				background: #191970;
 				color: ghostwhite;
-				margin-top: 200px;
 				padding: 5px 10px;
 				border-radius: 5px;
 }
+
 /* profile */
 header{
 				position: relative;
@@ -61,7 +89,8 @@ header > .content-wrap{
 }
 /*---------------- education */
 .education{
-				background-color: #A1C6D7 ;				
+				background-color: 	rgba(161,198,215,0.7);
+				clip-path: polygon(44% 0, 100% 8%, 100% 37%, 96% 95%, 56% 93%, 2% 100%, 0 15%);
 }
 .education .content-wrap section{
 				padding: 20px 0;
@@ -111,7 +140,7 @@ header > .content-wrap{
 .certificate img{
 				margin-top: 40px;
 }
-.certificates p{
+.certificate-item h3+p{
 				margin-bottom: 20px;
 }
 .certificate-item{

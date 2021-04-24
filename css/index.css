@@ -127,7 +127,7 @@ header > .content-wrap{
 }
 /* certificates */
 .certificates{
-				background-color: #A3BCB6;
+				background: linear-gradient(to right top, #65dfc9, #6cdbeb	);
 }
 .certificates h2{
 				padding-top: 40px;
@@ -157,10 +157,10 @@ footer{
 				font-family: 'Dancing Script', cursive;
 }
 footer ul{
-				list-style: none
+				list-style: none;
 }
 footer a{
-				text-decoration: none;
+				
 				color: #ffdf00;
 				background: none;
 }
@@ -176,6 +176,9 @@ footer span{
 				margin-left: 43%;
 				padding: 10px 10px;
 				text-align: center;
+}
+li .icon{
+				margin-right: 8px;
 }
 /* ---for medium screen device */
 @media screen and (min-width: 500px){
